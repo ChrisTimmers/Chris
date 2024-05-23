@@ -59,7 +59,7 @@ def assign_players():
                 for i in range(120):
                     random_player = random.choice(possible_players2)
                     display_assignment(placeholder, position, random_player, 0)
-                    time.sleep(0.000001*(0.5*i)**2)
+                    time.sleep(0.0001*(0.5*i)**2)
                 display_assignment(placeholder, position, selected_player, 1)
                 time.sleep(1)
             display_assignment(placeholder, position, selected_player, 1)
