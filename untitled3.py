@@ -59,7 +59,7 @@ def assign_players():
                 for i in range(120):
                     random_player = random.choice(possible_players2)
                     display_assignment(placeholder, position, random_player, 0)
-                    ##time.sleep(0.0001*(0.5*i)**2)
+                    time.sleep(0.000001*(0.5*i)**2)
                 display_assignment(placeholder, position, selected_player, 1)
                 time.sleep(1)
             display_assignment(placeholder, position, selected_player, 1)
@@ -109,10 +109,7 @@ for player, position in assigned_players.items():
 
 final_output += "</div>"
 
-st.empty() 
-# Create a new placeholder for the final lineup
-final_placeholder = st.empty()
-# Display the football field with the final lineup
+# Use the same placeholder to display the final lineup
 import streamlit.components.v1 as components
 components.html(
     f"""
@@ -120,3 +117,4 @@ components.html(
         {final_output}
     </div>
     """, height=600)
+
