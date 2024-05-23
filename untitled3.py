@@ -112,9 +112,10 @@ final_output += "</div>"
 # Create a new placeholder for the final lineup
 final_placeholder = st.empty()
 # Display the football field with the final lineup
-final_placeholder.markdown(
+import streamlit.components.v1 as components
+components.html(
     f"""
     <div style="position: relative; width: 100%; height: 600px; background-color: green; border: 2px solid white;">
         {final_output}
     </div>
-    """, unsafe_allow_html=True)
+    """, height=600)
