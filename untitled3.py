@@ -71,27 +71,27 @@ assign_players()
 # Map positions to coordinates on the football field
 position_coordinates = {
     "GK": (90, 50),
-    "RB": (70, 80),
-    "RCB": (70, 60),
-    "LCB": (70, 40),
-    "LB": (70, 20),
+    "RB": (70, 90),
+    "RCB": (70, 65),
+    "LCB": (70, 35),
+    "LB": (70, 10),
     "RCM": (50, 70),
     "LCM": (50, 30),
     "CAM": (40, 50),
-    "RW": (30, 80),
+    "RW": (30, 90),
     "ST": (20, 50),
-    "LW": (30, 20),
+    "LW": (30, 10),
     "WISSEL1": (110, 5),
-    "WISSEL2": (110, 25),
-    "WISSEL3": (110, 45)
+    "WISSEL2": (110, 35),
+    "WISSEL3": (110, 65)
 }
-
+print("Final line up ⬇️")
 # Final lineup assignment
 final_output = """
 <div style="position: relative; width: 100%; height: 500px; background-color: green; border: 2px solid white;">
 """
 
-box_width = "80px"
+box_width = "50px"
 box_height = "35px"
 
 for player, position in assigned_players.items():
