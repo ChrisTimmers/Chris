@@ -1,6 +1,7 @@
 import random
 import time
 import streamlit as st
+import streamlit.components.v1 as components
 
 # List of players and their possible positions
 players = {
@@ -111,12 +112,12 @@ def display_final_lineup(placeholder):
     final_output += "</div>"
 
     # Display the football field with the final lineup
-    placeholder.markdown(
+    components.html(
         f"""
         <div style="position: relative; width: 100%; height: 600px; background-color: green; border: 2px solid white;">
             {final_output}
         </div>
-        """, unsafe_allow_html=True)
+        """, height=600)
 
 # Run the assignment
 assign_players()
