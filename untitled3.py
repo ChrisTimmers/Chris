@@ -82,8 +82,8 @@ position_coordinates = {
     "ST": (20, 50),
     "LW": (30, 20),
     "WISSEL1": (110, 5),
-    "WISSEL2": (110, 20),
-    "WISSEL3": (110, 35)
+    "WISSEL2": (110, 25),
+    "WISSEL3": (110, 45)
 }
 
 # Final lineup assignment
@@ -91,8 +91,8 @@ final_output = """
 <div style="position: relative; width: 100%; height: 500px; background-color: green; border: 2px solid white;">
 """
 
-box_width = "100px"
-box_height = "40px"
+box_width = "80px"
+box_height = "35px"
 
 for player, position in assigned_players.items():
     top, left = position_coordinates[position]
